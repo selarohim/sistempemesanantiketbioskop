@@ -1,0 +1,32 @@
+RewriteEngine on
+
+RewriteRule ^$ media.php?module=home [L]
+RewriteRule ^help\.html$ media.php?module=help&id=$1 [L]
+RewriteRule ^about\.html$ media.php?module=about&id=$1 [L]
+RewriteRule ^theater\.html$ media.php?module=theater&id=$1 [L]
+
+RewriteRule ^login\.html$ media.php?module=form_login&id=$1 [L]
+RewriteRule ^daftar\.html$ media.php?module=daftar&id=$1 [L]
+RewriteRule ^hubungi-kami\.html$ media.php?module=hubungikami&id=$1 [L]
+RewriteRule ^hubungi-aksi\.html$ media.php?module=hubungiaksi&id=$1 [L]
+RewriteRule ^now\.html$ media.php?module=now&id=$1 [L]
+RewriteRule ^coming-soon\.html$ media.php?module=comingsoon&id=$1 [L]
+RewriteRule ^halberita-(.*)\.html$ media.php?module=home&halberita=$1 [L]
+RewriteRule ^berita-(.*)\.html$ media.php?module=detailberita&id=$1 [L]
+RewriteRule ^lihat-detail-(.*)\.html$ media.php?module=detailfilm&id=$1 [L]
+RewriteRule ^detail-kategori-(.*)\.html$ media.php?module=detailkategori&id=$1 [L]
+
+
+RewriteRule ^pesan-tiket-(.*)\.html$ media.php?module=pesantiket&id=$1 [L]
+RewriteRule ^aksi-pesan\.html$ media.php?module=aksipesan&id=$1 [L]
+RewriteRule ^laporan-pemesanan\.html$ media.php?module=laporanpemesanan&id=$1 [L]
+RewriteRule ^detail-pemesanan-(.*)\.html$ media.php?module=detailpemesanan&id=$1 [L]
+RewriteRule ^semua-konfirmasi\.html$ media.php?module=konfirmasisemua&id=$1 [L]
+RewriteRule ^konfirmasi-(.*)\.html$ media.php?module=konfirmasi&id=$1 [L]
+RewriteRule ^aksi-konfirmasi\.html$ media.php?module=aksikonfirmasi&id=$1 [L]
+RewriteRule ^cek-pesan-tiket\.html$ media.php?module=cekpesantiket&id=$1 [L]
+RewriteRule ^movie-(.*)-jam-(.*)\.html$ media.php?module=filterpesantiket&movie=$1&jam=$2 [L]
+
+RewriteRule ^kelola-profile\.html$ media.php?module=kelolaprofile&id=$1 [L]
+RewriteRule ^ganti-password\.html$ media.php?module=gantipassword&id=$1 [L]
+Options All -Indexes
